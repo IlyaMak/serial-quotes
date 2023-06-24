@@ -90,7 +90,7 @@ export default function Home() {
 
       <div className={styles.main}>
         <div>
-          "{quotes.map(quote => (quote.quote))}"
+          &quot;{quotes.map(quote => (quote.quote))}&quot;
         </div>
         <div className={styles.author}>
           {quotes.map(quote => ('- ' + quote.author))}
