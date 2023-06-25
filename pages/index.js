@@ -70,7 +70,7 @@ export default function Home() {
   }, [])
 
   return (
-    <div className={styles.container}>
+    <div className={styles.main}>
       <Head>
         <title>Serial Quotes</title>
         <link rel="icon" href="/favicon.ico" />
@@ -88,15 +88,17 @@ export default function Home() {
         </Button>
       </div>
 
-      <div className={styles.main}>
-        <div>
-          &quot;{quotes.map(quote => (quote.quote))}&quot;
-        </div>
-        <div className={styles.author}>
-          {quotes.map(quote => ('- ' + quote.author))}
+      <div className={styles.mainContent}>
+        <div className={styles.quote}>
+          <div>
+            &quot;{quotes.map(quote => (quote.quote))}&quot;
+          </div>
+          <div className={styles.author}>
+            {quotes.map(quote => ('- ' + quote.author))}
+          </div>
         </div>
         <IconButton className={styles.shuffleButton} onClick={showSerialQuotes} >
-          <ShuffleIcon className={styles.shuffleIcon} />
+          <ShuffleIcon className={styles.shuffleIcon} fontSize='large' />
         </IconButton>
       </div>
 
