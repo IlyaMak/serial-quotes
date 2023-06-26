@@ -9,18 +9,18 @@
   height: 90px;
 }
 
-.serialButton {
+Button.serialButton {
   width: 130px;
   height: 100%;
   margin-right: 10px;
 }
 
-.serialButton:hover,
-.serialButton:focus {
+Button.serialButton:hover,
+Button.serialButton:focus {
   box-shadow: 0 0 0 3px white;
 }
 
-.serialButton:active {
+Button.serialButton:active {
   box-shadow: 0 0 0 3px red;
 }
 
